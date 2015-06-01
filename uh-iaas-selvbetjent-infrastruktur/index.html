@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>UH IaaS - Selvbetjent infrastruktur</title>
+
+		<meta name="description" content="uh iaas - selvbetjent infrastruktur">
+		<meta name="author" content="Jan Ivar Beddari">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="../lib/reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="css/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="../lib/reveal.js/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../lib/reveal.js/css/print/pdf.css' : '../lib/reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1><span style="font-weight:bold;font-size:130px">uh iaas</span></h1>
+					
+					<h1><span style="font-weight:bold;font-size:80px">selvbetjent</span> <span style="color: red;font-weight:bold;font-size:120px">infrastruktur</span></h1>
+<a href="https://www.uninett.no/portal/skytjenester/projects_list"><img alt="Logo"  src="./img/logo.png" style="max-width: 1200; max-height: none; vertical-align:bottom; " /> </a>
+					
+				</section>
+<section>
+<section data-markdown>
+					<script type="text/template">
+## fra prosjektplanen
+
+- _A user must be able to start an instance immediately after first login. The instance must be available within 60 seconds._
+
+						
+					</script>
+				</section>
+</section>
+<section data-markdown>
+					<script type="text/template">
+## fra prosjektplanen
+
+- _A user must be able to create, update and delete instanes in the service from a graphical user interface in a browser, using an API or by using command line tools._
+
+						
+					</script>
+				</section>
+</section>
+<section data-markdown>
+					<script type="text/template">
+# er det mulig?
+
+iaas_demo { $itforum:
+  ensure => present
+}
+						
+					</script>
+				</section>
+</section>
+<section data-markdown>
+					<script type="text/template">
+## ja, absolutt
+						
+					</script>
+				</section>
+</section>
+<section data-markdown>
+					<script type="text/template">
+## hva vil en slik tjeneste gi sektoren?
+
+- _raskere_ tilgang
+- _høyere tilgjengelighet_
+- _fleksiblitet_ og _dynamikk_
+
+						
+					</script>
+				</section>
+</section>
+<section data-markdown>
+					<script type="text/template">
+# selvbetjent infrastruktur vil bedre vilkårene for forskning og utdanning
+
+						
+					</script>
+				</section>
+</section>
+<section data-markdown>
+					<script type="text/template">
+# "Users are choosers"
+Sitat Lars Oftedal (m. fl.)
+
+						
+					</script>
+				</section>
+</section>
+<section data-markdown>
+					<script type="text/template">
+# for eksempel ...
+						
+					</script>
+				</section>
+</section>
+<section data-markdown>
+					<script type="text/template">
+## ... professor Balthazar!
+[![Balthazar](./img/2_professor_balazar.gif)](http://github.com/norcams)
+						
+					</script>
+				</section>
+</section>
+<section data-markdown>
+					<script type="text/template">
+[![Balthazar](./img/balthazar.jpg)](http://github.com/norcams)
+						
+					</script>
+				</section>
+</section>
+
+<section data-markdown>
+					<script type="text/template">
+## ... men hva trenger han hjelp til?
+- bygging og vedlikehold av programvare
+- vedlikehold over tid
+- sikkert mye mer!
+						
+					</script>
+				</section>
+</section>
+
+<section data-markdown>
+					<script type="text/template">
+## Selvbetjent infrastruktur er fortsatt _infrastruktur_
+- tilgjengelighet og hastighet, men ikke magi
+						
+					</script>
+				</section>
+</section>
+
+<section data-markdown>
+					<script type="text/template">
+## hvem er UH IaaS?
+Jan Ivar, Tor, Erlend, Mikael og Hege ... og alle DERE!
+
+- [norcams/himlar](http://github.com/norcams/himlar)
+- [iaas.readthedocs.org](https://iaas.readthedocs.org/en/latest/project/index.html)
+						
+					</script>
+				</section>
+</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="../lib/reveal.js/lib/js/head.min.js"></script>
+		<script src="../lib/reveal.js/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: '../lib/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../lib/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../lib/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../lib/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../lib/reveal.js/plugin/zoom-js/zoom.js', async: true },
+					{ src: '../lib/reveal.js/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

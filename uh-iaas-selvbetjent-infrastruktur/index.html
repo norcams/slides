@@ -1,207 +1,290 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
-		<title>UH IaaS - Selvbetjent infrastruktur</title>
+    <title>UH IaaS - Selvbetjent infrastruktur</title>
 
-		<meta name="description" content="uh iaas - selvbetjent infrastruktur">
-		<meta name="author" content="Jan Ivar Beddari">
+    <meta name="description" content="uh iaas - selvbetjent infrastruktur">
+    <meta name="author" content="Jan Ivar Beddari">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<link rel="stylesheet" href="../lib/reveal.js/css/reveal.css">
-		<link rel="stylesheet" href="css/white.css" id="theme">
+    <link rel="stylesheet" href="../lib/reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="css/white.css" id="theme">
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="../lib/reveal.js/lib/css/zenburn.css">
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="../lib/reveal.js/lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? '../lib/reveal.js/css/print/pdf.css' : '../lib/reveal.js/css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '../lib/reveal.js/css/print/pdf.css' : '../lib/reveal.js/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 
-	<body>
+  <body>
 
-		<div class="reveal">
+    <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h1><span style="font-weight:bold;font-size:130px">uh iaas</span></h1>
-					
-					<h1><span style="font-weight:bold;font-size:80px">selvbetjent</span> <span style="color: red;font-weight:bold;font-size:120px">infrastruktur</span></h1>
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <h1><span style="font-weight:bold;font-size:130px">Del 1</span></h1>
+          <h1><span style="font-weight:bold;font-size:80px">selvbetjent</span> <span style="color: red;font-weight:bold;font-size:120px">infrastruktur</span></h1>
 <a href="https://www.uninett.no/portal/skytjenester/projects_list"><img alt="Logo"  src="./img/logo.png" style="max-width: 1200; max-height: none; vertical-align:bottom; " /> </a>
-					
-				</section>
+        </section>
 <section>
 <section data-markdown>
-					<script type="text/template">
+          <script type="text/template">
 ## fra prosjektplanen
 
 - _A user must be able to start an instance immediately after first login. The instance must be available within 60 seconds._
 
-						
-					</script>
-				</section>
+          </script>
+        </section>
 </section>
 <section data-markdown>
-					<script type="text/template">
+          <script type="text/template">
 ## fra prosjektplanen
 
 - _A user must be able to create, update and delete instanes in the service from a graphical user interface in a browser, using an API or by using command line tools._
 
-						
-					</script>
-				</section>
+          </script>
+        </section>
 </section>
 <section data-markdown>
-					<script type="text/template">
+          <script type="text/template">
 # er det mulig?
 
-iaas_demo { $itforum:
+iaas_demo { $video:
   ensure => present
 }
-						
-					</script>
-				</section>
+          </script>
+        </section>
 </section>
 <section data-markdown>
-					<script type="text/template">
+          <script type="text/template">
 ## ja, absolutt
-						
-					</script>
-				</section>
+          </script>
+        </section>
 </section>
 <section data-markdown>
-					<script type="text/template">
+          <script type="text/template">
 ## hva vil en slik tjeneste gi sektoren?
 
 - _raskere_ tilgang
 - _høyere tilgjengelighet_
 - _fleksiblitet_ og _dynamikk_
 
-						
-					</script>
-				</section>
+          </script>
+        </section>
 </section>
 <section data-markdown>
-					<script type="text/template">
+          <script type="text/template">
 # selvbetjent infrastruktur vil bedre vilkårene for forskning og utdanning
 
-						
-					</script>
-				</section>
+          </script>
+        </section>
 </section>
 <section data-markdown>
-					<script type="text/template">
+          <script type="text/template">
 # "Users are choosers"
-Sitat Lars Oftedal (m. fl.)
+Sitat: Lars Oftedal (og en mengde andre skyvitere ...)
 
-						
-					</script>
-				</section>
+          </script>
+        </section>
 </section>
 <section data-markdown>
-					<script type="text/template">
-# for eksempel ...
-						
-					</script>
-				</section>
-</section>
-<section data-markdown>
-					<script type="text/template">
-## ... professor Balthazar!
+          <script type="text/template">
+## Eksempel: Professor Balthazar!
 [![Balthazar](./img/2_professor_balazar.gif)](http://github.com/norcams)
-						
-					</script>
-				</section>
+          </script>
+        </section>
 </section>
 <section data-markdown>
-					<script type="text/template">
+          <script type="text/template">
 [![Balthazar](./img/balthazar.jpg)](http://github.com/norcams)
-						
-					</script>
-				</section>
+        </section>
 </section>
 
 <section data-markdown>
-					<script type="text/template">
+          <script type="text/template">
 ## ... men hva trenger han hjelp til?
 - bygging og vedlikehold av programvare
 - vedlikehold over tid
 - sikkert mye mer!
-						
-					</script>
-				</section>
+          </script>
+        </section>
 </section>
 
 <section data-markdown>
-					<script type="text/template">
+          <script type="text/template">
 ## Selvbetjent infrastruktur er fortsatt _infrastruktur_
 - tilgjengelighet og hastighet, men ikke magi
-						
-					</script>
-				</section>
+          </script>
+        </section>
 </section>
 
 <section data-markdown>
-					<script type="text/template">
+          <script type="text/template">
 ## hvem er UH IaaS?
 Jan Ivar, Tor, Erlend, Mikael og Hege ... og alle DERE!
 
 - [norcams/himlar](http://github.com/norcams/himlar)
 - [iaas.readthedocs.org](https://iaas.readthedocs.org/en/latest/project/index.html)
-						
-					</script>
-				</section>
+          </script>
+        </section>
+</section>
+
+        <section>
+          <h1><span style="font-weight:bold;font-size:130px">Del 2</span></h1>
+          <h1><span style="font-weight:bold;font-size:80px">kontinuerlig utvikling og </span><span style="color: red;font-weight:bold;font-size:120px">produksjon</span></h1>
+<a href="https://www.uninett.no/portal/skytjenester/projects_list"><img alt="Logo"  src="./img/logo.png" style="max-width: 1200; max-height: none; vertical-align:bottom; " /> </a>
+        </section>
+<section>
+<section data-markdown>
+          <script type="text/template">
+## kontinuerlig hva da?
+
+- Infrastruktur er aldri "ferdig"
+- Aktivitet i antall endringer per måned, uke, dag ... time?
+
+          </script>
+        </section>
+</section>
+<section data-markdown>
+          <script type="text/template">
+## hva kan vi levere i dag?
+
+- Instanser
+- Lagring
+- Mulighet for redundans over tre lokasjoner
+          </script>
+        </section>
+</section>
+<section data-markdown>
+          <script type="text/template">
+## hva er under planlegging?
+
+- Kryptering av trafikk site-til-site (IPsec)
+- Site-til-site data-replikering (disaster recovery)
+- Selvbetjent lastbalansering og DNS
+- Flere instanstyper (containere, fysiske servere?)
+          </script>
+        </section>
+</section>
+<section data-markdown>
+          <script type="text/template">
+## hvilke tjenester kan komme på lengere sikt?
+          </script>
+        </section>
+</section>
+<section data-markdown>
+          <script type="text/template">
+# "UH Platform Services"?
+
+- Ide til nytt praktisk samarbeid
+- "Et nivå opp" - tjenester bygget på IaaS
+
+          </script>
+        </section>
+</section>
+<section data-markdown>
+          <script type="text/template">
+## Forslag til fokusområder
+- Tilrettelegging for bruk av IaaS-platformer
+- Platform as a Service (Uninett NOVA?)
+- Logging og overvåking av tjenester
+
+          </script>
+        </section>
+</section>
+<section data-markdown>
+          <script type="text/template">
+## Hvordan samarbeide i praksis?
+- Dele _alt_ inkludert ressurser og personell
+- Verdien av det som skapes blir felles
+
+          </script>
+        </section>
+</section>
+<section data-markdown>
+          <script type="text/template">
+## Hmm, dette har vi jo nå litt erfaring med
+          </script>
+        </section>
+</section>
+<section data-markdown>
+          <script type="text/template">
+## ... men hva må vi gjøre bedre?
+- felles vei framover - felles strategi
+- UNINETT har kompetanse sektoren trenger
+- ingen blir gode av å jobbe 140% over tid
+          </script>
+        </section>
+</section>
+
+<section data-markdown>
+          <script type="text/template">
+# UH-sky må ha en konkret strategi og gjøre konkrete valg
+          </script>
+        </section>
+</section>
+
+<section data-markdown>
+          <script type="text/template">
+# UH IaaS: Gi oss noe å bevise!
+- platformen og mulighetene er der
+- ingen verdi uten en leveranse
+          </script>
+        </section>
 </section>
 
 
-			</div>
 
-		</div>
+      </div>
 
-		<script src="../lib/reveal.js/lib/js/head.min.js"></script>
-		<script src="../lib/reveal.js/js/reveal.js"></script>
+    </div>
 
-		<script>
+    <script src="../lib/reveal.js/lib/js/head.min.js"></script>
+    <script src="../lib/reveal.js/js/reveal.js"></script>
 
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+    <script>
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
 
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: '../lib/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: '../lib/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: '../lib/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: '../lib/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: '../lib/reveal.js/plugin/zoom-js/zoom.js', async: true },
-					{ src: '../lib/reveal.js/plugin/notes/notes.js', async: true }
-				]
-			});
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-		</script>
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '../lib/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../lib/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../lib/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../lib/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '../lib/reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '../lib/reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
 
-	</body>
+    </script>
+
+  </body>
 </html>

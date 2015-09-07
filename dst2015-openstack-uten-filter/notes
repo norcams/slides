@@ -1,0 +1,72 @@
+UH IaaS focus points “wishlist” below:
+
+“How possible is OpenStack?”
+
+   #1 You don’t buy OpenStack, you learn it
+   #2 If you think you could buy it, then you’d be WAY BETTER OFF just
+   using public cloud
+
+
+OpenStack
+Operativsystem
+Lagring
+Nettverk
+
+   Our own history
+
+      6 senior FTEs for a year, 2 of them already invested in OpenStack and
+      automation
+
+      Anything less will most likely not be enough!
+
+      But it depends on context and where your goal posts are
+
+         sum up some easy wins with “Openstack as an appliance”
+      that ^^ is not really cloud, is not really IaaS
+
+
+The hardest tech problem? The network.
+
+“An OpenStack networking solution that really works”
+
+   -
+
+   Cumulus Linux+Dell hardware
+   -
+
+   Project Calico, scalable L3 routed fabric
+   -
+
+      No NAT, because we can do IPv6
+      -
+
+      No NAT, because we can use IP-based security policies
+      -
+
+      No VLANS  because of the above
+
+
+Are you done? When are you done? We will never be done, actually 
+
+“What are we looking at as our next steps?”
+
+   -
+
+   Gain more operational knowledge and document processes in the base IaaS
+   systems
+   -
+
+      We’re not going to be AWS or Rackspace but we’ll need to continously
+      improve and gain more of our users trust
+      -
+
+   Create and maintain feedback loops neccessary to develop and extend HPC
+   usage
+   -
+
+   More flexible authentication/authorization to enable more seamless
+   collabration - this is a project on top on FEIDE from UNINETT called
+   Connect www.feideconnect.no
+   -
+
+   Openshift (kubernetes+docker) as a paas on our platform

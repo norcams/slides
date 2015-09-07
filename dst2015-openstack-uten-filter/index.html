@@ -42,10 +42,10 @@
 
       <div class="slides">
         <section>
-          <h1><span style="font-weight:bold;font-size:130px">#openstack</span></h1>
+          <h1><span style="font-weight:bold;font-size:130px">#OpenStack</span></h1>
           <h1><span style="font-weight:bold;font-size:120px">uten</span> <span style="color: red;font-weight:bold;font-size:120px">FILTER</span></h1>
 <a href="https://www.uninett.no/portal/skytjenester/projects_list"><img alt="Logo"  src="./img/logo.png" style="max-width: 1200; max-height: none; vertical-align:bottom; " /> </a>
-        </section>
+i        </section>
 
 <section data-markdown><script type="text/template">
 Erfaringsbasert sannhet #1
@@ -66,19 +66,154 @@ Erfaringsbasert sannhet #2
 <section data-markdown><script type="text/template">
 <!-- .slide: data-background="#990000" -->
 Oversatt til business
-# _En tilbyder tar stor risiko ved å levere plattformen_
+# _Er infrastruktur din kjernevirksomhet?_
 </script></section>
 
 <section data-markdown><script type="text/template">
 <!-- .slide: data-background="img/beddari_bg.jpg" -->
-#@beddari
-Twitter eller Freenode IRC
+# [@beddari](https://twitter.com/beddari)
+på Twitter eller Freenode IRC
+</script></section>
+
+<section data-markdown><script type="text/template">
+# UH IaaS
+4 universiteter, ett prosjekt
+</script></section>
+
+<section data-markdown><script type="text/template">
+## 6 senior-nivå ingeniører
+Flere med erfaring fra OpenStack eller automatisering
+</script></section>
+
+<section data-markdown><script type="text/template">
+### Med mindre ressurser er det neppe mulig å lykkes ...
+</script></section>
+<!-- end slide content -->
+
+<section data-markdown><script type="text/template">
+## ... hvis paradigmeskiftet er målet!
+</script></section>
+
+<section data-markdown><script type="text/template">
+<!-- .slide: data-background="#990000" -->
+# OpenStack er et paradigmeskifte
+</script></section>
+
+<section data-markdown><script type="text/template">
+* # API
+* ## OpenStack
+* ### Lagring
+* #### Nettverk
+</script></section>
+
+<section data-markdown><script type="text/template">
+# Infrastruktur som kode
+</script></section>
+
+<section data-markdown><script type="text/template">
+## _Automatisert og kode-definert krever ny organisering_
+</script></section>
+
+<section data-markdown><script type="text/template">
+## _Drift og vedlikehold med utviklingsnære metoder_
+</script></section>
+
+<section data-markdown><script type="text/template">
+![Traditional ops](./img/ops_trad.png)
+</script></section>
+
+<section data-markdown><script type="text/template">
+![Evolved ops](./img/ops_evo.png)
+</script></section>
+
+<section data-markdown><script type="text/template">
+## _git_
+</script></section>
+
+<section data-markdown><script type="text/template">
+## _dev, test, qa, prod_
+- Kontinuerlig, automatisk testing av endringer
+- Alle _inputs_ til systemet må under (kode)kontroll
+</script></section>
+
+<section data-markdown><script type="text/template">
+"_Dell was the first major networking systems provider to offer open
+networking solutions, and selected Cumulus Linux as the first third-party
+operating system for Dell Networking._"
+
+![S4810](./img/s4810.jpg)
+</script></section>
+
+<section data-markdown><script type="text/template">
+<!-- .slide: data-background="img/rocket_turtle.jpg" -->
+</script></section>
+
+<section data-markdown><script type="text/template">
+# Hmm, skeptisk!
+Den ligner, den blinker, men ER DEN ...
+</script></section>
+
+<section data-markdown><script type="text/template">
+## Cumulus VX + Packer og Terraform
+![Cumulus VX](./img/cumulus-vx-screen.png)
+
+Kontinuerlig integrasjon og testing av nettverk!
+</script></section>
+
+<section data-markdown><script type="text/template">
+## Cumulus Linux i OpenStack-miljø
+* Stor fleksibilitet
+* Ett sett med verktøy - ett sett med prosesser
+* Gjenbruk av kunnskap oppfordrer til innovasjon
+</script></section>
+
+<section data-markdown><script type="text/template">
+Erfaringsbasert sannhet #3
+# Standard OpenStack Neutron er ikke prod-klar
+</script></section>
+
+<section data-markdown><script type="text/template">
+## Tildels prekære mangler
+- Ikke designet for automatisk feilover
+- Ikke optimal trafikkflyt
+- Høy grad av sårbarhet
+</script></section>
+
+<section data-markdown><script type="text/template">
+<!-- .slide: data-background="#990000" -->
+# Du må bygge noe bedre selv!
+</script></section>
+
+<section data-markdown><script type="text/template">
+<!-- .slide: data-background="#000000" -->
+</script></section>
+
+<section data-markdown><script type="text/template">
+# Project Calico
+![Calico](./img/calico.png)
+</script></section>
+
+<section data-markdown><script type="text/template">
+_Project Calico virker uten overlay-nett og erstatter vSwitch på hver hypervisor-host med en vRouter_
+
+* http://www.projectcalico.org/
+* https://www.youtube.com/watch?v=MuQJeCpdsuU
+</script></section>
+
+<section data-markdown><script type="text/template">
+_Systemet er basert på BGP-ruting og kan levere nettverk til både OpenStack og Docker_
+</script></section>
+
+<section data-markdown><script type="text/template">
+![Logical](./img/routing.png)
+</script></section>
+
+<section data-markdown><script type="text/template">
+![Logical](./img/l2-spine-planes.svg)
 </script></section>
 
 
-
 <!-- end slide content -->
-
       </div>
 
     </div>

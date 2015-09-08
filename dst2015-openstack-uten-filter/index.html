@@ -181,7 +181,7 @@ Erfaringsbasert sannhet #3
 
 <section data-markdown><script type="text/template">
 <!-- .slide: data-background="#990000" -->
-# Du må bygge noe bedre selv!
+# OpenStack; bygg noe bedre selv!
 </script></section>
 
 <section data-markdown><script type="text/template">
@@ -194,14 +194,21 @@ Erfaringsbasert sannhet #3
 </script></section>
 
 <section data-markdown><script type="text/template">
-_Project Calico virker uten overlay-nett og erstatter vSwitch på hver hypervisor-host med en vRouter_
+_Project Calico er et IP-basert SDN uten overlay-nett som erstatter vSwitch på hver hypervisor-host med en vRouter_
 
 * http://www.projectcalico.org/
 * https://www.youtube.com/watch?v=MuQJeCpdsuU
 </script></section>
 
 <section data-markdown><script type="text/template">
-_Systemet er basert på BGP-ruting og kan levere nettverk til både OpenStack og Docker_
+_Systemet er basert på standard BGP-ruting og kan levere nettverkstjenester til OpenStack ... OG til Docker_
+</script></section>
+
+<section data-markdown><script type="text/template">
+## Simple as a feature
+* Ingen NAT - heller IPv6!
+* Ingen NAT - heller IP-baserte sikkerhetspolicy.
+* Ingen VLAN heller - i et ruting-basert nett trenger vi dem ikke.
 </script></section>
 
 <section data-markdown><script type="text/template">
@@ -212,6 +219,50 @@ _Systemet er basert på BGP-ruting og kan levere nettverk til både OpenStack og
 ![Logical](./img/l2-spine-planes.svg)
 </script></section>
 
+<section data-markdown><script type="text/template">
+_Ved hjelp av Dell, Cumulus Networks og Project Calico får vi en moderne, distribuert og enkel løsning uten svakhetene mange SDN-løsninger sliter med_
+</script></section>
+
+<section data-markdown><script type="text/template">
+* ## Vi VET at det skalerer. Det er BGP.
+* ## Nettverkstjenestene tilbys per hypervisor-host, distribuert. Ingen SPOF.
+* ## Vi kan kombinere programvare og hardware etter behov.
+</script></section>
+
+<section data-markdown><script type="text/template">
+<!-- .slide: data-background="#009933" -->
+# Produksjon?
+</script></section>
+
+<section data-markdown><script type="text/template">
+Erfaringsbasert sannhet #4
+# OpenStack venter ikke på deg
+</script></section>
+
+<section data-markdown><script type="text/template">
+## Bruk av OpenStack må være en kontinuerlig, langsiktig innsats
+</script></section>
+
+<section data-markdown><script type="text/template">
+# Hva er _våre_ neste steg?
+</script></section>
+
+<section data-markdown><script type="text/template">
+- ## Utvide erfaringsgrunnlaget og bedre dokumentasjon
+- ## Vi skal jobbe for brukerne - uten tillit til oss == ingen tjenenste
+- ## Opprette og vedlikeholde gode _feedback loops_ for videre utvikling av HPC-relatert bruk
+</script></section>
+
+<section data-markdown><script type="text/template">
+# Men likevel 'new cool tech'
+- [FEIDE Connect](http://feideconnect.no/) - grupper og "sosiale kontekster"
+- OpenShift (Kubernetes+Docker)
+- Mer Packer+Terraform, mer automatiserte tester
+</script></section>
+
+<section data-markdown><script type="text/template">
+<!-- .slide: data-background="img/tokyosummit.jpg" -->
+</script></section>
 
 <!-- end slide content -->
       </div>
